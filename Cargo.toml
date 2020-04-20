@@ -1,0 +1,14 @@
+[package]
+name = "bls_order_test"
+version = "0.1.0"
+authors = ["Michael Lodder <redmike7@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+amcl = { version = "3.2.5", default-features = false, features = ["bls381"], package = "miracl_amcl" }
+hash2curve = { version = "0.0.4", features = ["bls"] }
+hex = "0.4.2"
+rand = "0.7.3"
+sha2 = "0.8.1"
